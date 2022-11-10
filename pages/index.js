@@ -1,9 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
 import Link from 'next/link';
 import DateCard from './components/DateCard';
 import HorizontalGallery from './components/HorizontalGallery';
 import WilliamValeImage from '../public/william_vale.jpg';
+import CharityImage from '../public/charity.png';
+import Food52Image from '../public/food52.png';
+import PatagoniaImage from '../public/patagonia.png';
+import { useEffect, useState } from 'react';
+import RegistryCard from './components/RegistryCard';
+import MemoryGallery from './components/MemoryGallery';
 
 export default function Home() {
   const date_cards = [
@@ -148,6 +153,64 @@ export default function Home() {
     },
   ];
 
+  const faqs = [
+    [
+      {
+        question: 'Can I bring my kids?',
+        answer:
+          'We love kids, we even love your kids, but this is an adults only event. If you have concerns or needs regarding a babysitter, feel free to contact us directly.',
+      },
+      {
+        question: 'What’s the deal with technology at this thing?',
+        answer:
+          'We encourage you to unplug for most of the evening. Once you’ve posted that picture, we ask that you turn your phone on silent and try to be present. We’ve hired some spectacular photographers, so you’ll get your moment in the spotlight.',
+      },
+    ],
+    [
+      {
+        question: 'How did you two meet?',
+        answer:
+          'It was a beautiful early fall night in Oberlin, Ohio, in the fall of 2015. It was the first Splitchers of the year (a weekly event during which pitchers of PBR were half off and the DJ often played the greatest hits of a 2010 Bar/Bat Mitzvah). Sylvie went into the night knowing she wanted to catch the eye of a certain fella named Matt Basile, and the rest is history ;) We owe it all to the Sco, PBR, and a few friends who helped us along the way (you know who you are).',
+      },
+      {
+        question: 'Where should I stay?',
+        answer:
+          'There are lots of places within walking distance to stay if you’re visiting from out of town. Find a few of our suggestions above.',
+      },
+    ],
+    [
+      {
+        question: 'I have dietary restrictions, should I plan to eat before?',
+        answer:
+          'Don’t worry! If you’re concerned about specific dietary restrictions or allergies, please email us and we will do our best to accommodate so you, too, can enjoy the wonderful feast being prepared for us!',
+      },
+      {
+        question: 'What should I wear?',
+        answer:
+          'Formal festive attire! We want you to be comfortable while eating and dancing your heart out. That being said, we’d love for you to use this as an excuse to dress up a little, get fancy, feel pretty!',
+      },
+    ],
+  ];
+
+  const registry = [
+    {
+      image: PatagoniaImage,
+      content: 'Contribute to our honeymoon adventure!',
+      link: '',
+    },
+    {
+      image: Food52Image,
+      content:
+        'Help us throw epic dinner parties and fill our home with meaningful, beautiful things.',
+      link: '',
+    },
+    {
+      image: CharityImage,
+      content: 'Donate in our honor to an organization we care deeply about.',
+      link: '',
+    },
+  ];
+
   return (
     <div className=" mx-auto bg-theme-light">
       <Head>
@@ -187,14 +250,14 @@ export default function Home() {
           className="px-[32px] md:px-[76px] py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
         >
           <div className="space-y-2 text-center">
-            <span className="uppercase text-[16px] md:text-[24px] font-semibold">
+            <span className="uppercase text-[16px] md:text-[24px]">
               Join us in Brooklyn
             </span>
             <h2 className="font-newsreader  text-[40px] md:text-[96px] font-bold ">
               Marriage Celebration
             </h2>
           </div>
-          <p className="text-[16px] md:text-[24px] leading-[32px] md:leading-[44px] max-w-[1010px] mx-auto">
+          <p className="font-light text-[16px] md:text-[24px] leading-[32px] md:leading-[44px] max-w-[1010px] mx-auto">
             We will be married in Brooklyn, the place we love and call home, on
             November 4, 2023, and we can’t wait to commemorate this special
             event with all of you! We hope to toast, eat, and dance the weekend
@@ -206,7 +269,7 @@ export default function Home() {
           className="px-[32px] md:px-[76px] py-[72px] md:py-[144px] bg-theme-dark text-theme-light"
         >
           <div className="space-y-2 ">
-            <span className="uppercase text-[16px] md:text-[24px] font-semibold">
+            <span className="uppercase text-[16px] md:text-[24px]">
               What's the Plan?
             </span>
             <h2 className="font-newsreader text-[40px] md:text-[96px] font-bold ">
@@ -224,14 +287,14 @@ export default function Home() {
           className="py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
         >
           <div className="px-[32px] md:px-[76px] space-y-2 text-center">
-            <span className="uppercase text-[16px] md:text-[24px] font-semibold">
+            <span className="uppercase text-[16px] md:text-[24px] ">
               Where to stay? What to do?
             </span>
             <h2 className="font-newsreader text-[40px] md:text-[80px] font-bold ">
               Travel & Our Recommendations
             </h2>
           </div>
-          <p className=" px-[32px] md:px-[76px]text-[16px] md:text-[24px] leading-[32px] md:leading-[44px] max-w-[1252px] mx-auto text-center">
+          <p className="font-light px-[32px] md:px-[76px] text-[16px] md:text-[24px] leading-[32px] md:leading-[44px] max-w-[1252px] mx-auto text-center">
             There are loads of hotels in marvelous New York City. Here are a few
             that we suggest. Use the links below to access our discount codes
             for the small block of rooms we’ve reserved. Please try and book
@@ -253,6 +316,82 @@ export default function Home() {
               What to Do
             </h2>
             <HorizontalGallery gallery={activites} />
+          </div>
+        </section>
+        <section
+          id="faqs"
+          className="px-[32px] md:px-[76px] py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
+        >
+          <div className="space-y-2 ">
+            <span className="uppercase text-[16px] md:text-[24px] ">
+              Some Important, Some Not so Important Details
+            </span>
+            <h2 className="font-newsreader text-[40px] md:text-[72px] font-bold ">
+              Frequently Asked Questions
+            </h2>
+          </div>
+
+          <div className="mt-[32px] grid grid-cols-1 md:grid-cols-3 ">
+            {faqs.map((row, index) => {
+              return (
+                <div key={index} className="flex flex-col md:gap-y-8">
+                  {row.map((item) => {
+                    return (
+                      <div
+                        key={item.question}
+                        className="md:px-[24px] py-[20px] md:px-[24px] md:py-[48px]"
+                      >
+                        <h3 className="text-[24px] font-bold font-newsreader">
+                          {item.question}
+                        </h3>
+                        <p className="text-[16px] leading-[30px] mt-[12px]">
+                          {item.answer}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+        <section
+          id="gift"
+          className="px-[32px] md:px-[76px] py-[72px] md:py-[144px] bg-theme-dark text-theme-light"
+        >
+          <div className="space-y-2 text-center">
+            <span className="uppercase text-[16px] md:text-[24px] ">
+              Registry
+            </span>
+            <h2 className="font-newsreader text-[40px] md:text-[72px] font-bold ">
+              Your Presence is a Present!
+            </h2>
+            <p className="font-light text-[16px] md:text-[24px] leading-[32px] md:leading-[44px] max-w-[936px] mx-auto">
+              Having family and friends to celebrate with us is the best gift of
+              all, but if you wish to honor us with a wedding gift, we’ve
+              compiled some ideas:
+            </p>
+          </div>
+          <div className="registry-grid grid gap-x-[20px] w-full mt-[56px] justify-center gap-y-8">
+            {registry.map((gift) => {
+              return <RegistryCard key={gift.link} gift={gift} />;
+            })}
+          </div>
+        </section>
+        <section
+          id="gallery"
+          className="py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
+        >
+          <div className="px-[32px] md:px-[76px] space-y-2">
+            <span className="uppercase text-[16px] md:text-[24px] ">
+              A FEW PHOTOS
+            </span>
+            <h2 className="font-newsreader text-[40px] md:text-[72px] font-bold ">
+              Some highlights from our time together so far…
+            </h2>
+          </div>
+          <div className="h-[500px] relative overflow-x-hidden mt-[32px]">
+            <MemoryGallery />
           </div>
         </section>
       </main>

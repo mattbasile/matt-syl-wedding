@@ -23,7 +23,7 @@ function Card({ card, length }) {
     <Link
       target="_blank"
       href={card.link}
-      className="w-[300px] h-[200px] md:w-[500px] md:h-[400px] inline-flex flex-col justify-between p-[20px] gallery-card"
+      className="w-[300px] h-[200px] md:w-[500px] md:h-[400px] inline-flex flex-col justify-between p-[20px] gallery-card "
       style={{
         backgroundImage: `linear-gradient(0deg, rgba(100, 108, 54, 0.4), rgba(100, 108, 54, 0.4)), url(${card.image.src})`,
         backgroundPosition: 'center, center',

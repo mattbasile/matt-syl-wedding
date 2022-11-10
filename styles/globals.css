@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600;6..72,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Figtree:wght@300;400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600;6..72,700&display=swap');
 
 @tailwind base;
+html {
+  scroll-behavior: smooth;
+}
 .font-newsreader{
   font-family: 'Newsreader', serif;
+}
+.font-cedarville{
+ font-family: 'Cedarville Cursive', cursive;
 }
 
 body{
@@ -25,13 +31,59 @@ body{
     display: none;
 }
 
-.gallery-card {
+.gallery-card,
+.registry-card {
     background-size: 100%;
     -webkit-transition: all 0.3s ease-in-out;
 }
 
-.gallery-card:hover {
+
+.gallery-card:hover,
+.registry-card:hover {
     background-size: 110%;
 }
+.registry-grid{
+  grid-template-columns: 300px;
+  max-width: 944px;
+  margin: auto;
+}
+
+.memory-gallery{
+  position:absolute; 
+  top:0px; 
+  left:0px; 
+  overflow:hidden; 
+  white-space: nowrap;
+  animation: bannermove 25s linear infinite;
+}
+
+.memory-gallery:hover {
+    animation-play-state: paused;
+ }
+.memory-card:hover{
+  z-index: 1000;
+}
+
+
+@keyframes bannermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-50%, 0);
+  }
+}
+
+@media (min-width: 640px) { 
+  .registry-grid{  
+    grid-template-columns: 300px 300px;
+  }
+ }
+@media (min-width: 1024px) { 
+  .registry-grid{  
+    grid-template-columns: 300px 300px 300px;
+  }
+ }
+
 @tailwind components;
 @tailwind utilities;
