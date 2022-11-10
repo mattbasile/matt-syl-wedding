@@ -14,5 +14,24 @@ body{
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-card {
+    background-size: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.gallery-card:hover {
+    background-size: 110%;
+}
 @tailwind components;
 @tailwind utilities;

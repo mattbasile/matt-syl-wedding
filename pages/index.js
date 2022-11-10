@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import DateCard from './components/DateCard';
 import HorizontalGallery from './components/HorizontalGallery';
+import WilliamValeImage from '../public/william_vale.jpg';
 
 export default function Home() {
   const date_cards = [
@@ -44,6 +45,109 @@ export default function Home() {
     },
   ];
 
+  const hotels = [
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Book $400',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Book $400',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Book $400',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Book $400',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+  ];
+  const restuarants = [
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Make a Resy',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Make a Resy',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Make a Resy',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Make a Resy',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+  ];
+  const activites = [
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Plan your visit',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Plan your visit',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Plan your visit',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+    {
+      name: 'William Vale',
+      link: 'https://www.thewilliamvale.com/',
+      price: 'Plan your visit',
+      distance: '5 minute walk',
+      tagline: 'Sylvie and Matt are staying here!',
+      image: WilliamValeImage,
+    },
+  ];
+
   return (
     <div className=" mx-auto bg-theme-light">
       <Head>
@@ -60,7 +164,7 @@ export default function Home() {
           </Link>
           <div className="space-x-4 md:space-x-6 flex flex-wrap md:font-bold text-[12px] md:text-[20px] text-theme-light">
             <a href="#events">Events</a>
-            <a href="#hotel">Hotel and Travel</a>
+            <a href="#travel">Hotel and Travel</a>
             <a href="#faqs">FAQs</a>
             <a href="#gift">Gift</a>
             <a href="#gallery">Gallery</a>
@@ -105,7 +209,7 @@ export default function Home() {
             <span className="uppercase text-[16px] md:text-[24px] font-semibold">
               What's the Plan?
             </span>
-            <h2 className="font-newsreader  text-[40px] md:text-[96px] font-bold ">
+            <h2 className="font-newsreader text-[40px] md:text-[96px] font-bold ">
               Weekend Schedule
             </h2>
           </div>
@@ -113,6 +217,42 @@ export default function Home() {
             {date_cards.map((card) => (
               <DateCard key={card.event} card={card} />
             ))}
+          </div>
+        </section>
+        <section
+          id="travel"
+          className="py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
+        >
+          <div className="px-[32px] md:px-[76px] space-y-2 text-center">
+            <span className="uppercase text-[16px] md:text-[24px] font-semibold">
+              Where to stay? What to do?
+            </span>
+            <h2 className="font-newsreader text-[40px] md:text-[80px] font-bold ">
+              Travel & Our Recommendations
+            </h2>
+          </div>
+          <p className=" px-[32px] md:px-[76px]text-[16px] md:text-[24px] leading-[32px] md:leading-[44px] max-w-[1252px] mx-auto text-center">
+            There are loads of hotels in marvelous New York City. Here are a few
+            that we suggest. Use the links below to access our discount codes
+            for the small block of rooms we’ve reserved. Please try and book
+            early to secure your spot.
+          </p>
+
+          <div className="pl-[32px] md:pl-[76px] mt-[72px]">
+            <h2 className="font-newsreader text-[40px] font-bold">Hotels</h2>
+            <HorizontalGallery gallery={hotels} />
+          </div>
+          <div className="pl-[32px] md:pl-[76px] mt-[72px]">
+            <h2 className="font-newsreader text-[40px] font-bold">
+              Where to Eat
+            </h2>
+            <HorizontalGallery gallery={restuarants} />
+          </div>
+          <div className="pl-[32px] md:pl-[76px] mt-[72px]">
+            <h2 className="font-newsreader text-[40px] font-bold">
+              What to Do
+            </h2>
+            <HorizontalGallery gallery={activites} />
           </div>
         </section>
       </main>
