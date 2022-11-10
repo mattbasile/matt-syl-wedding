@@ -2,7 +2,11 @@ import Head from 'next/head';
 import Link from 'next/link';
 import DateCard from './components/DateCard';
 import HorizontalGallery from './components/HorizontalGallery';
-import WilliamValeImage from '../public/william_vale.jpg';
+import WilliamValeImage from '../public/hotel-images/william_vale.jpg';
+import HoxtonImage from '../public/hotel-images/hoxton.jpg';
+import WytheImage from '../public/hotel-images/wythe.jpg';
+import PennyImage from '../public/hotel-images/penny.jpg';
+import MoxyImage from '../public/hotel-images/moxy.jpg';
 import CharityImage from '../public/charity.png';
 import Food52Image from '../public/food52.png';
 import PatagoniaImage from '../public/patagonia.png';
@@ -60,28 +64,36 @@ export default function Home() {
       image: WilliamValeImage,
     },
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
+      name: 'The Hoxton',
+      link: 'https://thehoxton.com/williamsburg/',
       price: 'Book $400',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      distance: '7 minute walk',
+      tagline: 'Fantastic views!',
+      image: HoxtonImage,
     },
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
+      name: 'The Wythe',
+      link: 'https://www.wythehotel.com/',
       price: 'Book $400',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      distance: '6 minute walk',
+      tagline: 'Terrific bar and restaurant',
+      image: WytheImage,
     },
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
+      name: 'The Penny',
+      link: 'https://www.penny-hotel.com/',
       price: 'Book $400',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      distance: '15 minute walk',
+      tagline: 'Slightly further away but a great spot.',
+      image: PennyImage,
+    },
+    {
+      name: 'The Moxy',
+      link: 'https://www.marriott.com/en-us/hotels/nycxb-moxy-brooklyn-williamsburg/overview/',
+      price: 'Book $400',
+      distance: '23 minute walk',
+      tagline: 'Slightly further away but a great spot.',
+      image: MoxyImage,
     },
   ];
   const restuarants = [
@@ -128,7 +140,7 @@ export default function Home() {
       image: WilliamValeImage,
     },
     {
-      name: 'William Vale',
+      name: 'The Hoxton',
       link: 'https://www.thewilliamvale.com/',
       price: 'Plan your visit',
       distance: '5 minute walk',
@@ -394,7 +406,48 @@ export default function Home() {
             <MemoryGallery />
           </div>
         </section>
+        <section
+          id="contact"
+          className="py-[72px] md:py-[144px] bg-theme-light text-theme-dark text-center"
+        >
+          <div className="px-[32px] md:px-[76px] space-y-2">
+            <span className="uppercase text-[16px] md:text-[24px] ">
+              NEED MORE INFO?
+            </span>
+            <h2 className="font-newsreader text-[40px] md:text-[64px] font-bold ">
+              Feel free to send us a note here
+            </h2>
+            <a
+              href="mailto:Flormanbasile@gmail.com"
+              className=" text-[40px] md:text-[64px] font-light underline hover:bg-theme-dark hover:text-theme-light "
+            >
+              Flormanbasile@gmail.com
+            </a>
+          </div>
+        </section>
       </main>
+      <footer className="max-w-[1440px] mx-auto w-full bg-theme-dark text-theme-light flex flex-wrap justify-center md:justify-between px-[32px] md:px-[76px] py-[36px] items-baseline space-y-2">
+        <p className="font-light text-[16px] md:text-[24px]">
+          Design and coded with ❤️ by Matt.
+        </p>
+        <div className="font-light space-x-4 md:space-x-6 flex flex-wrap text-[12px] md:text-[20px] text-theme-light">
+          <a className="hover:underline" href="#events">
+            Events
+          </a>
+          <a className="hover:underline" href="#travel">
+            Hotel and Travel
+          </a>
+          <a className="hover:underline" href="#faqs">
+            FAQs
+          </a>
+          <a className="hover:underline" href="#gift">
+            Gift
+          </a>
+          <a className="hover:underline" href="#gallery">
+            Gallery
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
