@@ -282,7 +282,7 @@ export default function Home() {
         >
           <div className="space-y-2 ">
             <span className="uppercase text-[16px] md:text-[24px]">
-              What's the Plan?
+              What&apos;s the Plan?
             </span>
             <h2 className="font-newsreader text-[40px] md:text-[96px] font-bold ">
               Weekend Schedule
