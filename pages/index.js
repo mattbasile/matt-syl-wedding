@@ -208,18 +208,18 @@ export default function Home() {
     {
       image: PatagoniaImage,
       content: 'Contribute to our honeymoon adventure!',
-      link: '',
+      link: 'https://test.com',
     },
     {
       image: Food52Image,
       content:
         'Help us throw epic dinner parties and fill our home with meaningful, beautiful things.',
-      link: '',
+      link: 'https://food52.com/shop/registry/15180-matthew-and-sylvie',
     },
     {
       image: CharityImage,
       content: 'Donate in our honor to an organization we care deeply about.',
-      link: '',
+      link: 'https://test.com',
     },
   ];
 

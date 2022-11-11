@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
@@ -96,14 +97,19 @@ export default function MemoryGallery() {
 function Polaroid({ image, index }) {
   const [tiltClass, setTiltClass] = useState('');
 
-  useEffect(() => {
-    if (image.tilt === 'right') {
+  const tiltConstructor = () => {
+    const tilt = image.tilt;
+    if (tilt === 'right') {
       setTiltClass('z-20 -mx-[25px] w-auto rotate-2');
     }
-    if (image.tilt === 'left') {
+    if (tilt === 'left') {
       setTiltClass('z-20 -mx-[25px] w-auto -rotate-2');
     }
-  }, []);
+  };
+
+  useEffect(() => {
+    tiltConstructor();
+  }, [tiltConstructor]);
 
   return (
     <div
@@ -112,7 +118,7 @@ function Polaroid({ image, index }) {
         `${tiltClass}`
       }
     >
-      <img src={image.image.src} alt={image.tag} />
+      <Image width={275} height="450" src={image.image.src} alt={image.tag} />
       <p className="py-[10px] font-cedarville text-[14px]">{image.tag}</p>
     </div>
   );
