@@ -431,16 +431,16 @@ export default function Home() {
           id="contact"
           className="max-w-[1440px] pb-[72px] md:pb-[144px] bg-theme-light text-theme-dark text-center"
         >
-          <div className="px-[32px] md:px-[76px] space-y-2">
-            <span className="uppercase text-[16px] md:text-[24px] ">
+          <div className="px-[32px] md:px-[76px] md:space-y-2">
+            <span className="uppercase text-[12px] md:text-[24px] ">
               NEED MORE INFO?
             </span>
-            <h2 className="font-newsreader text-[32px] md:text-[64px] font-bold ">
+            <h2 className="font-newsreader text-[24px] md:text-[64px] font-bold ">
               Feel free to send us a note here
             </h2>
             <a
               href="mailto:Flormanbasile@gmail.com"
-              className=" text-[24px] md:text-[64px] font-light underline hover:bg-theme-dark hover:text-theme-light "
+              className="text-[16px] md:text-[64px] font-light underline hover:bg-theme-dark hover:text-theme-light "
             >
               Flormanbasile@gmail.com
             </a>
