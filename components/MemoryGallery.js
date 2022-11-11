@@ -2,16 +2,16 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import Italy from '../../public/gallery-images/S_M_Italy.jpg';
-import LA from '../../public/gallery-images/S_M_LA.jpg';
-import Maine from '../../public/gallery-images/S_M_Maine.jpg';
-import Marathon from '../../public/gallery-images/S_M_Marathon.jpg';
-import Napa from '../../public/gallery-images/S_M_Napa.jpg';
-import Oberlin from '../../public/gallery-images/S_M_Oberlin.jpg';
-import Thanksgiving from '../../public/gallery-images/S_M_Thanksgiving.jpg';
-import Shelter from '../../public/gallery-images/S_M_Shelter.jpg';
-import Slovania from '../../public/gallery-images/S_M_Slovania.jpg';
-import Subway from '../../public/gallery-images/S_M_Subway.jpg';
+import Italy from '../public/gallery-images/S_M_Italy.jpg';
+import LA from '../public/gallery-images/S_M_LA.jpg';
+import Maine from '../public/gallery-images/S_M_Maine.jpg';
+import Marathon from '../public/gallery-images/S_M_Marathon.jpg';
+import Napa from '../public/gallery-images/S_M_Napa.jpg';
+import Oberlin from '../public/gallery-images/S_M_Oberlin.jpg';
+import Thanksgiving from '../public/gallery-images/S_M_Thanksgiving.jpg';
+import Shelter from '../public/gallery-images/S_M_Shelter.jpg';
+import Slovania from '../public/gallery-images/S_M_Slovania.jpg';
+import Subway from '../public/gallery-images/S_M_Subway.jpg';
 
 export default function MemoryGallery() {
   const images = [

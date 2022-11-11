@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import DateCard from './components/DateCard';
-import HorizontalGallery from './components/HorizontalGallery';
+import DateCard from '../components/DateCard';
+import HorizontalGallery from '../components/HorizontalGallery';
 import WilliamValeImage from '../public/hotel-images/william_vale.jpg';
 import HoxtonImage from '../public/hotel-images/hoxton.jpg';
 import WytheImage from '../public/hotel-images/wythe.jpg';
@@ -11,8 +11,8 @@ import CharityImage from '../public/charity.png';
 import Food52Image from '../public/food52.png';
 import PatagoniaImage from '../public/patagonia.png';
 import { useEffect, useState } from 'react';
-import RegistryCard from './components/RegistryCard';
-import MemoryGallery from './components/MemoryGallery';
+import RegistryCard from '../components/RegistryCard';
+import MemoryGallery from '../components/MemoryGallery';
 
 export default function Home() {
   const date_cards = [
@@ -332,7 +332,7 @@ export default function Home() {
         </section>
         <section
           id="faqs"
-          className="px-[32px] md:px-[76px] py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
+          className="px-[32px] md:px-[76px] pb-[72px] md:pb-[144px] bg-theme-light text-theme-dark"
         >
           <div className="space-y-2 ">
             <span className="uppercase text-[16px] md:text-[24px] ">
@@ -408,7 +408,7 @@ export default function Home() {
         </section>
         <section
           id="contact"
-          className="py-[72px] md:py-[144px] bg-theme-light text-theme-dark text-center"
+          className="pb-[72px] md:pb-[144px] bg-theme-light text-theme-dark text-center"
         >
           <div className="px-[32px] md:px-[76px] space-y-2">
             <span className="uppercase text-[16px] md:text-[24px] ">

@@ -4,7 +4,7 @@ export default function DateCard({ card }) {
   return (
     <div className="py-[36px] px-[24px] bg-theme-dark text-theme-light border-t-[5px] border-theme-light">
       <h3 className="uppercase font-newsreader font-medium  text-[40px] md:text-[100px]">
-        {card.date || ''}
+        {card.date || 11.3}
       </h3>
       <div>
         <p className="text-[24px] md:text-[40px]">{card.event}</p>
