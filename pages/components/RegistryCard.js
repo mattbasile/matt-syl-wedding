@@ -5,7 +5,7 @@ export default function RegistryCard({ gift }) {
     <a
       key={gift.link}
       className="registry-card inline-flex h-[450px] w-300px rounded-[20px] flex-col justify-end"
-      href={gift.link}
+      href={gift.link || ''}
       style={{
         backgroundImage: `linear-gradient(0deg, rgba(255, 255, 244, 0.1), rgba(255, 255, 244, 0.1)), url(${gift.image.src})`,
         backgroundPosition: 'center, center',

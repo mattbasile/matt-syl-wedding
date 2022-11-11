@@ -6,19 +6,19 @@ export default function HorizontalGallery({ gallery }) {
     <div
       className="full scrolling-wrapper space-x-[24px] md:space-x-[50px] mt-[12px]"
       style={{
-        gridTemplateColumns: `25px repeat(${gallery.length}, calc(50% - 20px * 2)) 25px`,
+        gridTemplateColumns: `25px repeat(${
+          gallery.length || 4
+        }, calc(50% - 20px * 2)) 25px`,
       }}
     >
       {gallery.map((card) => (
-        <Card key={card.name} card={card} length={gallery.length} />
+        <Card key={card.name} card={card} />
       ))}
     </div>
   );
 }
 
-function Card({ card, length }) {
-  console.log(card.image.src);
-
+function Card({ card }) {
   return (
     <Link
       target="_blank"
