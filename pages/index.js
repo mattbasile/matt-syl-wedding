@@ -10,6 +10,17 @@ import MoxyImage from '../public/hotel-images/moxy.jpg';
 import CharityImage from '../public/charity.png';
 import Food52Image from '../public/food52.png';
 import PatagoniaImage from '../public/patagonia.png';
+import ComodoreImage from '../public/eat-images/commodore.jpeg';
+import LeIndustrieImage from '../public/eat-images/le-industrie.jpg';
+import RamirezImage from '../public/eat-images/ramirez.jpeg';
+import HaveImage from '../public/eat-images/have.jpeg';
+import FiveLeavesImage from '../public/eat-images/fiveleaves.jpeg';
+import DevocionImage from '../public/eat-images/devocion.jpeg';
+import HomeComingImage from '../public/eat-images/homeComing.jpeg';
+import DominoImage from '../public/do-images/domino.jpeg';
+import MccarrenImage from '../public/do-images/mccarren.jpeg';
+import GutterImage from '../public/do-images/gutter.jpeg';
+import MomaImage from '../public/do-images/moma.jpeg';
 import { useEffect, useState } from 'react';
 import RegistryCard from '../components/RegistryCard';
 import MemoryGallery from '../components/MemoryGallery';
@@ -98,70 +109,94 @@ export default function Home() {
   ];
   const restuarants = [
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
-      price: 'Make a Resy',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      name: 'The Commodore',
+      link: 'https://www.thecommodorebrooklyn.com/',
+      price: 'Fried Chicken & Frozen Drinks',
+      distance: '366 Metropolitan Ave, Brooklyn, NY ',
+      tagline: 'Order a frozen drink and fat fried chicken sando.',
+      image: ComodoreImage,
     },
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
-      price: 'Make a Resy',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      name: 'Le Industrie',
+      link: 'https://www.lindustriebk.com/',
+      price: 'Pizza',
+      distance: '254 S 2nd St, Brooklyn, NY 11211',
+      tagline: 'Find the best slice',
+      image: LeIndustrieImage,
     },
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
-      price: 'Make a Resy',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      name: 'Taqueria Ramirez',
+      link: 'https://www.instagram.com/taqueria_ramirez_/?hl=en',
+      price: 'Tacos',
+      distance: '94 Franklin St, Brooklyn 11222',
+      tagline: 'The line is worth it...',
+      image: RamirezImage,
     },
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
-      price: 'Make a Resy',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      name: 'Have and Meyer',
+      link: 'https://www.haveandmeyer.com/',
+      price: 'Natty Wine',
+      distance: '103 Havemeyer St, Brooklyn, NY 11211',
+      tagline: 'It wouldn’t be Brooklyn without natural wine',
+      image: HaveImage,
+    },
+    {
+      name: 'Five Leaves',
+      link: 'http://fiveleavesny.com/',
+      price: 'Brunch',
+      distance: '18 Bedford Ave, Brooklyn, NY 11222',
+      tagline: 'Brunch like a real Brooklyn-ite',
+      image: FiveLeavesImage,
+    },
+    {
+      name: 'Devocion',
+      link: 'https://www.devocion.com/',
+      price: 'Coffee',
+      distance: '69 Grand St. (at Wythe), Brooklyn, NY 11249',
+      tagline: 'Beans roasted on the premises',
+      image: DevocionImage,
+    },
+    {
+      name: 'Homecoming',
+      link: 'https://home-coming.com/',
+      price: 'Coffee & Flowers',
+      distance: '92 Berry St, Brooklyn, NY 11249',
+      tagline: 'Coffee with a side of florals, cards, and perfect home touches',
+      image: HomeComingImage,
     },
   ];
   const activites = [
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
-      price: 'Plan your visit',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      name: 'Domino Park',
+      link: 'https://www.dominopark.com/visit',
+      price: 'Outdoor Space',
+      distance: 'River Street Brooklyn, NY 11249',
+      tagline: 'Take in views of the east river.',
+      image: DominoImage,
     },
     {
-      name: 'The Hoxton',
-      link: 'https://www.thewilliamvale.com/',
-      price: 'Plan your visit',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      name: 'McCarren Park',
+      link: 'https://www.google.com/maps?t=h&daddr=40.72148812830,+-73.95268960300+(Center+of+McCarren+Park)',
+      price: 'Outdoor Space',
+      distance: 'Nassau Ave, Bayard, Leonard & N 12 Sts',
+      tagline: 'Take in views of the east river.',
+      image: MccarrenImage,
     },
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
-      price: 'Plan your visit',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      name: 'The Gutter',
+      link: 'https://www.thegutterbarles.com/williamsburg',
+      price: 'Bowling',
+      distance: '200 N. 14th St Brooklyn 11249',
+      tagline: 'Knock down a few pins at this dive.',
+      image: GutterImage,
     },
     {
-      name: 'William Vale',
-      link: 'https://www.thewilliamvale.com/',
-      price: 'Plan your visit',
-      distance: '5 minute walk',
-      tagline: 'Sylvie and Matt are staying here!',
-      image: WilliamValeImage,
+      name: 'MOMA PS 1',
+      link: 'https://www.momaps1.org/',
+      price: 'Museum',
+      distance: '22-25 Jackson Avenue, Queens, NY 11101',
+      tagline: 'Take in some culture just north of Greenpoint.',
+      image: MomaImage,
     },
   ];
 
@@ -226,7 +261,7 @@ export default function Home() {
   return (
     <div className=" mx-auto bg-theme-light">
       <Head>
-        <title>Sylvie and Matt | Are Getting Marrried</title>
+        <title>Sylvie and Matt | Are Getting Married</title>
         <meta
           name="description"
           content="Sylvie and Matt's Wedding Website. Learn more about the events and fun we plan on having."
@@ -340,7 +375,7 @@ export default function Home() {
           </div>
           <div className="pl-[32px] md:pl-[76px] mt-[72px]">
             <h2 className="font-newsreader text-[40px] font-bold">
-              Where to Eat
+              Where to Eat & Drink
             </h2>
             <HorizontalGallery gallery={restuarants} />
           </div>

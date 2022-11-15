@@ -30,18 +30,20 @@ function Card({ card }) {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="w-full flex justify-end ">
-        <div className="rounded-full shadow-lg font-semibold text-[12px] md:text-[20px] px-[12px] py-[8px] md:px-[20px] md:py-[16px] bg-theme-light">
+      <div className="w-full flex justify-end text-wrap">
+        <div className="rounded-full shadow-lg font-semibold text-[12px] md:text-[20px] px-[12px] py-[8px] md:px-[24px] md:py-[12px] bg-theme-light">
           {card.price}
         </div>
       </div>
-      <div className="text-theme-light">
+      <div className="text-theme-light whitespace-normal">
         <span className="block font-bold text-[24px] md:text-[30px]">
           {card.name}
         </span>
-        <span className="block font-semibold text-[12px] md:text-[16px]">
-          {card.distance}
-        </span>
+        {card.distance ? (
+          <span className="block font-semibold text-[12px] md:text-[16px]">
+            {card.distance}
+          </span>
+        ) : null}
         <span className="block font-semibold text-[12px] md:text-[16px]">
           {card.tagline}
         </span>
