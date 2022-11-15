@@ -16,7 +16,7 @@ import RamirezImage from '../public/eat-images/ramirez.jpeg';
 import HaveImage from '../public/eat-images/have.jpeg';
 import FiveLeavesImage from '../public/eat-images/fiveleaves.jpeg';
 import DevocionImage from '../public/eat-images/devocion.jpeg';
-import HomeComingImage from '../public/eat-images/homeComing.jpeg';
+import HomeComingImage from '../public/eat-images/homecoming.jpeg';
 import DominoImage from '../public/do-images/domino.jpeg';
 import MccarrenImage from '../public/do-images/mccarren.jpeg';
 import GutterImage from '../public/do-images/gutter.jpeg';
