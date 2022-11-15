@@ -352,7 +352,7 @@ export default function Home() {
         </section>
         <section
           id="travel"
-          className="py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
+          className="hidden py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
         >
           <div className="px-[32px] md:px-[76px] space-y-2 text-center">
             <span className="uppercase text-[16px] md:text-[24px] ">
@@ -388,7 +388,7 @@ export default function Home() {
         </section>
         <section
           id="faqs"
-          className="px-[32px] md:px-[76px] pb-[72px] md:pb-[144px] bg-theme-light text-theme-dark"
+          className="px-[32px] md:px-[76px] py-[72px]  bg-theme-light text-theme-dark"
         >
           <div className="space-y-2 ">
             <span className="uppercase text-[16px] md:text-[24px] ">
