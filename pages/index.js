@@ -21,6 +21,10 @@ import DominoImage from '../public/do-images/domino.jpeg';
 import MccarrenImage from '../public/do-images/mccarren.jpeg';
 import GutterImage from '../public/do-images/gutter.jpeg';
 import MomaImage from '../public/do-images/moma.jpeg';
+import BloomingDalesLogo from '../public/registry_images/bloomingdale_logo.png';
+import ZolaLogo from '../public/registry_images/zola_logo.png';
+import AOTLogo from '../public/registry_images/america-on-tech-logo.png';
+
 import { useEffect, useState } from 'react';
 import RegistryCard from '../components/RegistryCard';
 import MemoryGallery from '../components/MemoryGallery';
@@ -241,18 +245,18 @@ export default function Home() {
 
   const registry = [
     {
-      image: PatagoniaImage,
+      image: ZolaLogo,
       content: 'Contribute to our honeymoon adventure!',
-      link: 'https://test.com',
+      link: '#',
     },
     {
-      image: Food52Image,
+      image: BloomingDalesLogo,
       content:
-        'Help us throw epic dinner parties and fill our home with meaningful, beautiful things.',
-      link: 'https://food52.com/shop/registry/15180-matthew-and-sylvie',
+        'Help us throw epic dinner parties and fill our home with meaningful, beautiful things from Bloomingdales',
+      link: 'https://www.bloomingdales.com/registry/wedding/guest/SYLVIE-FLORMAN-MATT-BASILE/?registryId=7391579',
     },
     {
-      image: CharityImage,
+      image: AOTLogo,
       content: 'Donate in our honor to an organization we care deeply about.',
       link: 'https://test.com',
     },
@@ -286,7 +290,7 @@ export default function Home() {
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
-      <header className="max-w-[1440px] mx-auto w-full bg-header h-[700px] md:h-[955px] pb-[78px] flex flex-col justify-between">
+      <header className="max-w-[1440px] mx-auto w-full bg-theme-dark pb-[78px] flex flex-col justify-between">
         <nav className="flex flex-wrap w-full justify-center md:justify-between items-center px-[32px] md:px-[76px] py-[24px]">
           <Link href="/">
             <h1 className="font-newsreader uppercase font-bold text-[32px] text-theme-light">
@@ -301,6 +305,7 @@ export default function Home() {
             <a href="#gallery">Gallery</a>
           </div>
         </nav>
+        <img className="w-[500px] mx-auto	" src="M_S_sketch_white.png" alt="" />
         <div className="px-[32px] md:px-[76px]">
           <h1 className="font-newsreader text-[52px] md:text-[96px] font-bold text-theme-light">
             Sylvie and Matt

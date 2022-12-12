@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
-export default function RegistryCard({ gift }) {
+export default function RegistryCard({ gift, index }) {
   return (
     <a
       key={gift.link}
-      className="registry-card inline-flex h-[450px] w-300px rounded-[20px] flex-col justify-end"
-      href={gift.link || ''}
-      style={{
-        backgroundImage: `linear-gradient(0deg, rgba(255, 255, 244, 0.1), rgba(255, 255, 244, 0.1)), url(${gift.image.src})`,
-        backgroundPosition: 'center, center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      target="_blank"
+      className={`w-full block flex flex-col items-center border-2 border-theme-light bg-theme-light text-theme-dark mt-8 py-8 ${
+        index % 2 === 0 ? 'hover:rotate-1' : 'hover:-rotate-1'
+      }`}
+      href={gift.link || '#'}
+      rel="noreferrer"
     >
-      <span className="flex items-center justify-center h-[70px] px-[8px] font-bold text-[14px] text-theme-dark bg-theme-light rounded-b-[20px] text-center">
+      <img
+        src={gift.image.src}
+        className="px-8 py-6 aspect-[3/2] object-contain	w-3/4"
+      ></img>
+      {/* <span className="px-8 py-4 text-[16px] leading-[30px]">
         {gift.content}
-      </span>
+      </span> */}
     </a>
   );
 }
+
+
