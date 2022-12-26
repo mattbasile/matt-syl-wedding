@@ -397,7 +397,7 @@ export default function Home() {
         >
           <div className="space-y-2 ">
             <span className="uppercase text-[16px] md:text-[24px] ">
-              Some Important, Some Not so Important Details
+              Some Important ( and some not so important) Details
             </span>
             <h2 className="font-newsreader text-[40px] md:text-[72px] font-bold ">
               Frequently Asked Questions
