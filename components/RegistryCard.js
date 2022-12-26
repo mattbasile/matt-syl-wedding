@@ -15,9 +15,6 @@ export default function RegistryCard({ gift, index }) {
         src={gift.image.src}
         className="px-8 py-6 aspect-[3/2] object-contain	w-3/4"
       ></img>
-      {/* <span className="px-8 py-4 text-[16px] leading-[30px]">
-        {gift.content}
-      </span> */}
     </a>
   );
 }

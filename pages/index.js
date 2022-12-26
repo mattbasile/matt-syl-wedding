@@ -58,14 +58,14 @@ export default function Home() {
     {
       date: 11.5,
       event: 'Sunday Funday',
-      time: '12:30pm',
-      location: 'Pigs Beach',
-      location_website: 'https://www.thirdsbk.com/',
-      address: '171 Banker Street, Brooklyn, NY 11222',
+      time: '11:00am',
+      location: 'TBD',
+
+      address: ' ',
       google_maps_url:
         'https://www.google.com/maps/place/171+Banker+St,+Brooklyn,+NY+11222/@40.7247503,-73.95503,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25943963050d9:0xf80191169ebe093a!8m2!3d40.7247503!4d-73.95503',
       content:
-        'We’re lucky to be sharing our weekend with one of the best days in New York City, the NYC Marathon! We invite you to meet us after you’ve cheered along the runners at our favorite neighborhood spot to eat more food (if you can), and watch some football (with Matt…) ',
+        'We’re lucky to be sharing our weekend with one of the best days in New York City, the NYC Marathon! We hope you’ll meet us to cheer along the runners!',
     },
   ];
 
@@ -73,7 +73,7 @@ export default function Home() {
     {
       name: 'William Vale',
       link: 'https://www.thewilliamvale.com/',
-      price: 'Book $400',
+      price: 'Book',
       distance: '5 minute walk',
       tagline: 'Sylvie and Matt are staying here!',
       image: WilliamValeImage,
@@ -81,7 +81,7 @@ export default function Home() {
     {
       name: 'The Hoxton',
       link: 'https://thehoxton.com/williamsburg/',
-      price: 'Book $400',
+      price: 'Book',
       distance: '7 minute walk',
       tagline: 'Fantastic views!',
       image: HoxtonImage,
@@ -89,7 +89,7 @@ export default function Home() {
     {
       name: 'The Wythe',
       link: 'https://www.wythehotel.com/',
-      price: 'Book $400',
+      price: 'Book',
       distance: '6 minute walk',
       tagline: 'Terrific bar and restaurant',
       image: WytheImage,
@@ -97,15 +97,15 @@ export default function Home() {
     {
       name: 'The Penny',
       link: 'https://www.penny-hotel.com/',
-      price: 'Book $400',
-      distance: '15 minute walk',
-      tagline: 'Slightly further away but a great spot.',
+      price: 'Book',
+      distance: '16 minute walk',
+      tagline: 'Use code FlormanBasile in "Group Code" at checkout.',
       image: PennyImage,
     },
     {
       name: 'The Moxy',
-      link: 'https://www.marriott.com/en-us/hotels/nycxb-moxy-brooklyn-williamsburg/overview/',
-      price: 'Book $400',
+      link: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1668022047800&key=GRP&app=resvlink',
+      price: 'Book',
       distance: '23 minute walk',
       tagline: 'Slightly further away but a great spot.',
       image: MoxyImage,
@@ -214,14 +214,14 @@ export default function Home() {
       {
         question: 'What’s the deal with technology at this thing?',
         answer:
-          'We encourage you to unplug for most of the evening. Once you’ve posted that picture, we ask that you turn your phone on silent and try to be present. We’ve hired some spectacular photographers, so you’ll get your moment in the spotlight.',
+          'We encourage you to unplug for most of the evening and try to be present. We’ve hired some spectacular photographers, so you’ll get your moment in the spotlight.',
       },
     ],
     [
       {
         question: 'How did you two meet?',
         answer:
-          'It was a beautiful early fall night in Oberlin, Ohio, in the fall of 2015. It was the first Splitchers of the year (a weekly event during which pitchers of PBR were half off and the DJ often played the greatest hits of a 2010 Bar/Bat Mitzvah). Sylvie went into the night knowing she wanted to catch the eye of a certain fella named Matt Basile, and the rest is history ;) We owe it all to the Sco, PBR, and a few friends who helped us along the way (you know who you are).',
+          'It was a beautiful early fall night in Oberlin, Ohio. The year was 2015. It was the first Splitchers of the year (a weekly event during which pitchers of PBR were half off and the DJ often played the greatest hits of a 2010 Bar/Bat Mitzvah). Sylvie went into the night knowing she wanted to catch the eye of a certain fella named Matt Basile, and the rest is history ;) We owe it all to the Sco, PBR, and a few friends who helped us along the way (you know who you are).',
       },
       {
         question: 'Where should I stay?',
@@ -238,7 +238,7 @@ export default function Home() {
       {
         question: 'What should I wear?',
         answer:
-          'Formal festive attire! We want you to be comfortable while eating and dancing your heart out. That being said, we’d love for you to use this as an excuse to dress up a little, get fancy, feel pretty!',
+          'Formal attire. We want you to be comfortable while eating and dancing your heart out. That being said, we’d love for you to use this as an excuse to dress up a little, get fancy, feel pretty!',
       },
     ],
   ];
@@ -247,7 +247,7 @@ export default function Home() {
     {
       image: ZolaLogo,
       content: 'Contribute to our honeymoon adventure!',
-      link: '#',
+      link: 'https://www.zola.com/registry/sylvieandmatt',
     },
     {
       image: BloomingDalesLogo,
@@ -357,7 +357,7 @@ export default function Home() {
         </section>
         <section
           id="travel"
-          className="hidden py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
+          className=" py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
         >
           <div className="px-[32px] md:px-[76px] space-y-2 text-center">
             <span className="uppercase text-[16px] md:text-[24px] ">
