@@ -209,7 +209,7 @@ export default function Home() {
       {
         question: 'Can I bring my kids?',
         answer:
-          'We love kids, we even love your kids, but this is an adults only event. If you have concerns or needs regarding a babysitter, feel free to contact us directly.',
+          'We love kids, we even love your kids, but this is an adults event. The only children present will be those in our immediate family. If you have concerns or needs regarding a babysitter, feel free to contact us directly.',
       },
       {
         question: 'What’s the deal with technology at this thing?',
