@@ -11,6 +11,9 @@ export default function RegistryCard({ gift, index }) {
       href={gift.link || '#'}
       rel="noreferrer"
     >
+      {/* <p className="text-center font-semibold text-xl font-newsreader">
+        {gift.title}
+      </p> */}
       <img
         src={gift.image.src}
         className="px-8 py-6 aspect-[3/2] object-contain	w-3/4"

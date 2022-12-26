@@ -23,7 +23,7 @@ import GutterImage from '../public/do-images/gutter.jpeg';
 import MomaImage from '../public/do-images/moma.jpeg';
 import BloomingDalesLogo from '../public/registry_images/bloomingdale_logo.png';
 import ZolaLogo from '../public/registry_images/zola_logo.png';
-import AOTLogo from '../public/registry_images/america-on-tech-logo.png';
+import ChipsLogo from '../public/registry_images/chips_logo.png';
 
 import { useEffect, useState } from 'react';
 import RegistryCard from '../components/RegistryCard';
@@ -246,19 +246,18 @@ export default function Home() {
   const registry = [
     {
       image: ZolaLogo,
-      content: 'Contribute to our honeymoon adventure!',
+      title: 'Honeymoon Fund',
       link: 'https://www.zola.com/registry/sylvieandmatt',
     },
     {
       image: BloomingDalesLogo,
-      content:
-        'Help us throw epic dinner parties and fill our home with meaningful, beautiful things from Bloomingdales',
+      title: 'Home Registry',
       link: 'https://www.bloomingdales.com/registry/wedding/guest/SYLVIE-FLORMAN-MATT-BASILE/?registryId=7391579',
     },
     {
-      image: AOTLogo,
-      content: 'Donate in our honor to an organization we care deeply about.',
-      link: 'https://test.com',
+      image: ChipsLogo,
+      title: 'Make a Donation.',
+      link: 'https://give.chipsonline.org/give/181349/#!/donation/checkout',
     },
   ];
 
@@ -453,7 +452,7 @@ export default function Home() {
         </section>
         <section
           id="gallery"
-          className="py-[72px] md:py-[144px] bg-theme-light text-theme-dark"
+          className="py-[72px] md:py-[144px] bg-theme-light text-theme-dark overflow-scroll-none"
         >
           <div className="px-[32px] md:px-[76px] space-y-2">
             <span className="uppercase text-[16px] md:text-[24px] ">
@@ -475,12 +474,12 @@ export default function Home() {
             <span className="uppercase text-[12px] md:text-[24px] ">
               NEED MORE INFO?
             </span>
-            <h2 className="font-newsreader text-[24px] md:text-[64px] font-bold ">
+            <h2 className="font-newsreader text-[24px] md:text-[48px] font-bold ">
               Feel free to send us a note here
             </h2>
             <a
               href="mailto:Flormanbasile@gmail.com"
-              className="text-[16px] md:text-[64px] font-light underline hover:bg-theme-dark hover:text-theme-light "
+              className="text-[16px] md:text-[48px] font-light underline hover:bg-theme-dark hover:text-theme-light "
             >
               Flormanbasile@gmail.com
             </a>
