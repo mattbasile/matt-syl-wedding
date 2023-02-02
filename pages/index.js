@@ -35,11 +35,10 @@ export default function Home() {
       date: 11.3,
       event: 'Welcome Drinks',
       time: '9:30pm',
-      location: 'Spritzenhauss',
-      location_website: 'https://spritzenhaus33.business.site/',
-      address: '33 Nassau Avenue Brooklyn, NY 11222',
-      google_maps_url:
-        'https://www.google.com/maps/place/Spritzenhaus33/data=!3m1!4b1!4m2!3m1!1s0x89c259448f9fe1fd:0xdb8de662ae8f43ca',
+      location: 'TBD',
+      location_website: '#',
+      address: ' ',
+      google_maps_url: 'TBD',
       content:
         'Join us as we kick off our weekend right and celebrate our last night legally unbound. It’s totally optional, but we’d love to ring in the weekend with you at one of our favorite Greenpoint spots.',
     },
@@ -83,7 +82,7 @@ export default function Home() {
       link: 'https://thehoxton.com/williamsburg/',
       price: 'Book',
       distance: '7 minute walk',
-      tagline: 'Fantastic views!',
+      tagline: 'Use code HITCHED1123 to book!',
       image: HoxtonImage,
     },
     {
@@ -396,7 +395,7 @@ export default function Home() {
         >
           <div className="space-y-2 ">
             <span className="uppercase text-[16px] md:text-[24px] ">
-              Some Important ( and some not so important) Details
+              Some Important (and some not so important) Details
             </span>
             <h2 className="font-newsreader text-[40px] md:text-[72px] font-bold ">
               Frequently Asked Questions

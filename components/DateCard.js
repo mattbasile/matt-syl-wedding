@@ -12,7 +12,7 @@ export default function DateCard({ card }) {
           {card.time} at
           <a
             className={
-              card.location_website ? 'underline  block ml-2' : ' block ml-2'
+              card.location === 'TBD' ? 'block ml-2' : 'underline block ml-2'
             }
             href={card.location_website}
             _target="blank"
