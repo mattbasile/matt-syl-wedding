@@ -7,26 +7,23 @@ export default function DateCard({ card }) {
         {card.date || 11.3}
       </h3>
       <div>
-        <p className="text-[24px] md:text-[40px]">{card.event}</p>
+        <p className="text-[24px] md:text-[32px]">{card.event}</p>
         <span className="text-[16px] md:text-[20px] font-light flex space-x-2">
-          {card.time} at
           <a
-            className={
-              card.location === 'TBD' ? 'block ml-2' : 'underline block ml-2'
-            }
+            className={card.location === 'TBD' ? 'block' : 'underline block '}
             href={card.location_website}
             _target="blank"
           >
             {card.location}
           </a>
         </span>
-        <a
+        {/* <a
           className="text-[16px]  md:text-[20px] font-light"
           href={card.address_url}
           _target="blank"
         >
           {card.address}
-        </a>
+        </a> */}
       </div>
       <p className="text-[16px] md:text-[20px] font-light leading-[36px] mt-4 md:mt-6">
         {card.content}

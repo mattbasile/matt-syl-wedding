@@ -44,7 +44,7 @@ export default function Home() {
     },
     {
       date: 11.4,
-      event: 'Reception',
+      event: 'Ceremony & Reception',
       time: '5:30pm',
       location: 'Rule of Thirds',
       location_website: 'https://www.thirdsbk.com/',
@@ -86,14 +86,6 @@ export default function Home() {
       image: HoxtonImage,
     },
     {
-      name: 'The Wythe',
-      link: 'https://www.wythehotel.com/',
-      price: 'Book',
-      distance: '6 minute walk',
-      tagline: 'Terrific bar and restaurant',
-      image: WytheImage,
-    },
-    {
       name: 'The Penny',
       link: 'https://www.penny-hotel.com/',
       price: 'Book',
@@ -106,8 +98,16 @@ export default function Home() {
       link: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1668022047800&key=GRP&app=resvlink',
       price: 'Book',
       distance: '23 minute walk',
-      tagline: 'Slightly further away but a great spot.',
+      tagline: 'Click here to get our discounted rate.',
       image: MoxyImage,
+    },
+    {
+      name: 'The Wythe',
+      link: 'https://www.wythehotel.com/',
+      price: 'Book',
+      distance: '6 minute walk',
+      tagline: 'Terrific bar and restaurant',
+      image: WytheImage,
     },
   ];
   const restuarants = [
@@ -206,26 +206,9 @@ export default function Home() {
   const faqs = [
     [
       {
-        question: 'Can I bring my kids?',
-        answer:
-          'We love kids, we even love your kids, but this is an adults event. The only children present will be those in our immediate family. If you have concerns or needs regarding a babysitter, feel free to contact us directly.',
-      },
-      {
         question: 'What’s the deal with technology at this thing?',
         answer:
           'We encourage you to unplug for most of the evening and try to be present. We’ve hired some spectacular photographers, so you’ll get your moment in the spotlight.',
-      },
-    ],
-    [
-      {
-        question: 'How did you two meet?',
-        answer:
-          'It was a beautiful early fall night in Oberlin, Ohio. The year was 2015. It was the first Splitchers of the year (a weekly event during which pitchers of PBR were half off and the DJ often played the greatest hits of a 2010 Bar/Bat Mitzvah). Sylvie went into the night knowing she wanted to catch the eye of a certain fella named Matt Basile, and the rest is history ;) We owe it all to the Sco, PBR, and a few friends who helped us along the way (you know who you are).',
-      },
-      {
-        question: 'Where should I stay?',
-        answer:
-          'There are lots of places within walking distance to stay if you’re visiting from out of town. Find a few of our suggestions above.',
       },
     ],
     [
@@ -234,6 +217,8 @@ export default function Home() {
         answer:
           'Don’t worry! If you’re concerned about specific dietary restrictions or allergies, please email us and we will do our best to accommodate so you, too, can enjoy the wonderful feast being prepared for us!',
       },
+    ],
+    [
       {
         question: 'What should I wear?',
         answer:
@@ -395,7 +380,7 @@ export default function Home() {
         >
           <div className="space-y-2 ">
             <span className="uppercase text-[16px] md:text-[24px] ">
-              Some Important (and some not so important) Details
+              Some Important Details
             </span>
             <h2 className="font-newsreader text-[40px] md:text-[72px] font-bold ">
               Frequently Asked Questions
