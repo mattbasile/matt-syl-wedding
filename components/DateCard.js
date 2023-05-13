@@ -4,7 +4,7 @@ export default function DateCard({ card }) {
   return (
     <div className="py-[36px] px-[24px] bg-theme-dark text-theme-light border-t-[5px] border-theme-light">
       <h3 className="uppercase font-newsreader font-medium  text-[40px] md:text-[100px]">
-        {card.date || 11.3}
+        {card.date || 11.4}
       </h3>
       <div>
         <p className="text-[24px] md:text-[32px]">{card.event}</p>
@@ -17,13 +17,13 @@ export default function DateCard({ card }) {
             {card.location}
           </a>
         </span>
-        {/* <a
+        <a
           className="text-[16px]  md:text-[20px] font-light"
           href={card.address_url}
           _target="blank"
         >
           {card.address}
-        </a> */}
+        </a>
       </div>
       <p className="text-[16px] md:text-[20px] font-light leading-[36px] mt-4 md:mt-6">
         {card.content}

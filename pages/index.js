@@ -34,37 +34,37 @@ export default function Home() {
     {
       date: 11.3,
       event: 'Welcome Drinks',
-      time: '9:30pm',
-      location: 'TBD',
-      location_website: '#',
-      address: ' ',
-      google_maps_url: 'TBD',
+      time: '8:30 - 11:00pm',
+      location: 'The Richardson',
+      location_website: 'https://www.therichardsonnyc.com/',
+      address: '451 Graham Ave, Brooklyn, NY 11222',
+      google_maps_url:
+        'https://www.google.com/maps/place/The+Richardson/@40.7188722,-73.9453556,15z/data=!4m6!3m5!1s0x89c259504825d137:0x7fe9a9981a4fdc91!8m2!3d40.7188722!4d-73.9453556!16s%2Fg%2F1thk9nqt',
       content:
-        'Join us as we kick off our weekend right and celebrate our last night legally unbound. It’s totally optional, but we’d love to ring in the weekend with you at one of our favorite Greenpoint spots.',
+        'Join us as we kick off our weekend right with some cocktails and very light bites in the billards room.',
     },
     {
       date: 11.4,
       event: 'Ceremony & Reception',
-      time: '5:30pm',
+      time: '5:30 - 11:30pm',
       location: 'Rule of Thirds',
       location_website: 'https://www.thirdsbk.com/',
       address: '171 Banker Street, Brooklyn, NY 11222',
       google_maps_url:
         'https://www.google.com/maps/place/171+Banker+St,+Brooklyn,+NY+11222/@40.7247503,-73.95503,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25943963050d9:0xf80191169ebe093a!8m2!3d40.7247503!4d-73.95503',
       content:
-        'Ceremony followed by dinner, dancing, and festivities. You won’t want to miss it! Stay tune for after party details...',
+        'Ceremony followed by dinner, dancing, and festivities. You won’t want to miss it!',
     },
     {
-      date: 11.5,
-      event: 'Sunday Funday',
-      time: '11:00am',
-      location: 'TBD',
-
-      address: ' ',
-      google_maps_url:
-        'https://www.google.com/maps/place/171+Banker+St,+Brooklyn,+NY+11222/@40.7247503,-73.95503,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25943963050d9:0xf80191169ebe093a!8m2!3d40.7247503!4d-73.95503',
+      date: 11.4,
+      event: 'After Party',
+      time: '11:30pm - 1am',
+      location: "Paulie Gee's Slice Shop",
+      location_website: 'https://pauliegee.com/slice-shop/',
+      address: '110 Franklin Street Brooklyn, NY 11222',
+      google_maps_url: 'https://goo.gl/maps/h9AmswaBTKidD8yx6',
       content:
-        'We’re lucky to be sharing our weekend with one of the best days in New York City, the NYC Marathon! We hope you’ll meet us to cheer along the runners!',
+        "And after the party it's a pizza party! Let's keep the night going with a slice, a drink and a sick DJ set from Dre Scott.",
     },
   ];
 

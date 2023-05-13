@@ -49,7 +49,6 @@ body{
 }
 
 .memory-gallery{
-  height: 100%;
   position:absolute; 
   top:0px; 
   left:0px; 
@@ -59,8 +58,9 @@ body{
 }
 
 .memory-gallery:hover {
-    animation-play-state: paused;
+    animation-play-state: running;
  }
+
 .memory-card:hover{
   z-index: 1000;
 }
@@ -79,6 +79,9 @@ body{
   .registry-grid{  
     grid-template-columns: 300px 300px;
   }
+  .memory-gallery:hover {
+    animation-play-state:paused;
+ }
  }
 @media (min-width: 1024px) { 
   .registry-grid{  
