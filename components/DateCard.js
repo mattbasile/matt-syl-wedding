@@ -24,6 +24,9 @@ export default function DateCard({ card }) {
         >
           {card.address}
         </a>
+        <span className="text-[16px]  md:text-[20px] font-light block">
+          {card.time}
+        </span>
       </div>
       <p className="text-[16px] md:text-[20px] font-light leading-[36px] mt-4 md:mt-6">
         {card.content}
