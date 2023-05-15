@@ -58,7 +58,7 @@ export default function Home() {
     {
       date: 11.4,
       event: 'After Party',
-      time: '11:30pm - 1am',
+      time: '11:30pm - 1:30am',
       location: "Paulie Gee's Slice Shop",
       location_website: 'https://pauliegee.com/slice-shop/',
       address: '110 Franklin Street Brooklyn, NY 11222',
