@@ -206,6 +206,20 @@ export default function Home() {
   const faqs = [
     [
       {
+        question: 'What does “Festive Formal” mean?',
+        answer:
+          'Think of it as formal’s fun, sophisticated and not-at-all-stuffy cousin. We want you to be comfortable while you eat and dance your heart out, but we’d love for you to take this as an opportunity to dress up and feel pretty! In other words: If you have a tux, you can where it. If not, don’t rent one! Have a beautiful long dress you’ve been dying to wear? We’d love to see it! If you have any questions, email us and we’re happy to consult ;) ',
+      },
+    ],
+    [
+      {
+        question: 'I have dietary restrictions, should I plan to eat before?',
+        answer:
+          'Rule of Thirds offers a creative, comforting twist on Japanese cuisine. If you’re concerned about specific dietary restrictions or allergies, please email us (LINK THIS TO OUR EMAIL) and we will do our best to accommodate so you, too, can enjoy the wonderful feast being prepared for us. ',
+      },
+    ],
+    [
+      {
         question: 'What’s the deal with technology at this thing?',
         answer:
           'We encourage you to unplug for most of the evening and try to be present. We’ve hired some spectacular photographers, so you’ll get your moment in the spotlight.',
@@ -213,16 +227,9 @@ export default function Home() {
     ],
     [
       {
-        question: 'I have dietary restrictions, should I plan to eat before?',
+        question: 'How do I get around?',
         answer:
-          'Don’t worry! If you’re concerned about specific dietary restrictions or allergies, please email us and we will do our best to accommodate so you, too, can enjoy the wonderful feast being prepared for us!',
-      },
-    ],
-    [
-      {
-        question: 'What should I wear?',
-        answer:
-          'Formal attire. We want you to be comfortable while eating and dancing your heart out. That being said, we’d love for you to use this as an excuse to dress up a little, get fancy, feel pretty!',
+          'It’s New York City! Uber and Lyfts are available at all hours from all spots of the city. This is the easiest way to get to the wedding. If you’re driving, please be advised there is street parking, but we will not have a valet and some streets may be closed due to the upcoming marathon. Another easy way to arrive is to take the subway! The Nassau Avenue G train stop is just a 5 minute walk.',
       },
     ],
   ];
@@ -387,7 +394,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="mt-[32px] grid grid-cols-1 md:grid-cols-3 ">
+          <div className="mt-[32px] grid grid-cols-1 md:grid-cols-2 ">
             {faqs.map((row, index) => {
               return (
                 <div key={index} className="flex flex-col md:gap-y-8">
