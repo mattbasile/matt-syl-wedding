@@ -86,7 +86,7 @@ export default function MemoryGallery() {
   ];
 
   return (
-    <div className="flex items-center memory-gallery mt-4">
+    <div className="flex items-center memory-gallery mt-4 py-5">
       {images.map((image, index) => (
         <Polaroid key={image.image.src} image={image} index={index} />
       ))}
