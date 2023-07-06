@@ -215,7 +215,7 @@ export default function Home() {
       {
         question: 'I have dietary restrictions, should I plan to eat before?',
         answer:
-          'Rule of Thirds offers a creative, comforting twist on Japanese cuisine. If you’re concerned about specific dietary restrictions or allergies, please email us (LINK THIS TO OUR EMAIL) and we will do our best to accommodate so you, too, can enjoy the wonderful feast being prepared for us. ',
+          'Rule of Thirds offers a creative, comforting twist on Japanese cuisine. If you’re concerned about specific dietary restrictions or allergies, please email us at flormanbasile@gmail.com and we will do our best to accommodate so you, too, can enjoy the wonderful feast being prepared for us. ',
       },
     ],
     [
