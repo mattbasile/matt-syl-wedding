@@ -208,7 +208,7 @@ export default function Home() {
       {
         question: 'What does “Festive Formal” mean?',
         answer:
-          'Think of it as formal’s fun, sophisticated and not-at-all-stuffy cousin. We want you to be comfortable while you eat and dance your heart out, but we’d love for you to take this as an opportunity to dress up and feel pretty! In other words: If you have a tux, you can where it. If not, don’t rent one! Have a beautiful long dress you’ve been dying to wear? We’d love to see it! If you have any questions, email us and we’re happy to consult ;) ',
+          'Think of it as formal’s fun, sophisticated and not-at-all-stuffy cousin. We want you to be comfortable while you eat and dance your heart out, but we’d love for you to take this as an opportunity to dress up and feel pretty! In other words: If you have a tux, you can wear it. If not, don’t rent one! Have a beautiful long dress you’ve been dying to wear? We’d love to see it! If you have any questions, email us and we’re happy to consult ;) ',
       },
     ],
     [
