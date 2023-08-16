@@ -43,7 +43,7 @@ export default function Banner() {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          Join us at Jaffa from 8 – 10pm on Friday November 3rd..
+          Join us at Jaffa from 8 – 10pm on Friday November 3rd.
         </p>
         <a
           href="#events"
