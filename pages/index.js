@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import DateCard from '../components/DateCard';
+import Banner from '../components/Banner';
 import HorizontalGallery from '../components/HorizontalGallery';
 import WilliamValeImage from '../public/hotel-images/william_vale.jpg';
 import HoxtonImage from '../public/hotel-images/hoxton.jpg';
@@ -34,14 +35,14 @@ export default function Home() {
     {
       date: 11.3,
       event: 'Welcome Drinks',
-      time: '8:30 - 11:00pm',
-      location: 'The Richardson',
-      location_website: 'https://www.therichardsonnyc.com/',
-      address: '451 Graham Ave, Brooklyn, NY 11222',
+      time: '8:00 - 10:00pm',
+      location: 'Jaffa',
+      location_website: 'https://www.jaffabrooklyn.com/',
+      address: '97 Wythe Ave, Brooklyn, NY 11222',
       google_maps_url:
-        'https://www.google.com/maps/place/The+Richardson/@40.7188722,-73.9453556,15z/data=!4m6!3m5!1s0x89c259504825d137:0x7fe9a9981a4fdc91!8m2!3d40.7188722!4d-73.9453556!16s%2Fg%2F1thk9nqt',
+        'https://www.google.com/maps/place/The+Hoxton,+Williamsburg/@40.720831,-73.9587603,15z/data=!4m9!3m8!1s0x89c2595d67e022b9:0xeb5c58873aa07774!5m2!4m1!1i2!8m2!3d40.720831!4d-73.9587603!16s%2Fg%2F11gbk4yhjy?sa=X&ved=2ahUKEwjvnrLG9f_-AhWujYkEHX73DTQQ_BJ6BAh1EAc&shorturl=1',
       content:
-        'Join us as we kick off our weekend right with some cocktails and very light bites in the billards room.',
+        'Join us to kick off the weekend right! Drinks will be provided :) ',
     },
     {
       date: 11.4,
@@ -254,6 +255,7 @@ export default function Home() {
 
   return (
     <div className=" mx-auto bg-theme-light">
+      <Banner />
       <Head>
         <title>Sylvie and Matt | Are Getting Married</title>
         <meta

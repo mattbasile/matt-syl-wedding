@@ -12,15 +12,17 @@ export default function DateCard({ card }) {
           <a
             className={card.location === 'TBD' ? 'block' : 'underline block '}
             href={card.location_website}
-            _target="blank"
+            target="_blank"
+            rel="noreferrer"
           >
             {card.location}
           </a>
         </span>
         <a
           className="text-[16px]  md:text-[20px] font-light"
-          href={card.address_url}
-          _target="blank"
+          href={card.google_maps_url}
+          target="_blank"
+          rel="noreferrer"
         >
           {card.address}
         </a>
