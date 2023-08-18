@@ -455,7 +455,7 @@ export default function Home() {
               Some highlights from our time together so far…
             </h2>
           </div>
-          <div className="h-[500px] relative overflow-x-hidden mt-[32px]">
+          <div className=" relative  mt-[32px]">
             <MemoryGallery />
           </div>
         </section>
