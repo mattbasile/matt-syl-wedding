@@ -91,7 +91,7 @@ export default function Home() {
       link: 'https://www.penny-hotel.com/',
       price: 'Book',
       distance: '16 minute walk',
-      tagline: 'Use code FlormanBasile in "Group Code" at checkout.',
+      tagline: 'Click here to book now.',
       image: PennyImage,
     },
     {
@@ -99,7 +99,7 @@ export default function Home() {
       link: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1668022047800&key=GRP&app=resvlink',
       price: 'Book',
       distance: '23 minute walk',
-      tagline: 'Click here to get our discounted rate.',
+      tagline: 'Click here to book now',
       image: MoxyImage,
     },
     {
