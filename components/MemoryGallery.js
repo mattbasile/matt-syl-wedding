@@ -272,7 +272,13 @@ function Polaroid({ image, index }) {
         `${tiltClass}`
       }
     >
-      <Image width={275} height="450" src={image.image.src} alt={image.tag} />
+      <Image
+        priority="true"
+        width={275}
+        height="450"
+        src={image.image.src}
+        alt={image.tag}
+      />
       <p className="py-[10px] font-cedarville text-[14px]">{image.tag}</p>
     </div>
   );
